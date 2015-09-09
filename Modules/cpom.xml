@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <groupId>testgroup</groupId>
+    <artifactId>apache-maven</artifactId>
+    <packaging>tar</packaging>
+    <version>1.0.1</version>
+
+    <dependencies>
+    <dependency>
+        <groupId>testgroup</groupId>
+        <artifactId>apache-maven</artifactId>
+        <version>1.0.1</version>
+        <type>tar</type>
+    </dependency>
+  </dependencies>
+
+    <file>C:\Users\bao\PycharmProjects\CLib4Maven\Modules\apache-maven-1.0.1.tar</file>
+    <repo>
+        <url>http://localhost:8081/artifactory/libs-release-local</url>
+        <id>bao-PC</id>
+    </repo>
+
+    <local>
+        <default>
+            #默认的设定
+            <include>./include</include>
+            <lib>./lib</lib>
+        </default>
+
+        <apache-maven>
+            #特殊的设定
+            <include>C:\Users\bao\PycharmProjects\CLib4Maven\Modules\new_proj\include</include>
+            <lib>C:\Users\bao\PycharmProjects\CLib4Maven\Modules\new_proj\lib</lib>
+        </apache-maven>
+    </local>
+
+
+</project>
